@@ -4,7 +4,7 @@ export FABRIC_CFG_PATH=${PWD}/../../../artifacts/channel/config/
 
 export TLS_FILE=${PWD}/../../../artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer4.example.com/tls/server.crt
 
-export CHANNEL_NAME=mychannel
+export CHANNEL_NAME=commonchannel
 export SYSTEM_CHANNEL_NAME=sys-channel
 
 setGlobalsForOrderer() {

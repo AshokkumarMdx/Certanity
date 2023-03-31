@@ -59,7 +59,7 @@ cryptogen generate --config=./org2-crypto.yaml --output=./crypto-config/
 rm org1-org2-channel.tx
 # rm -rf ../../channel-artifacts/org1-org2-channel.block
 
-# channel name defaults to "mychannel"
+# channel name defaults to "commonchannel"
 CHANNEL_NAME="org1-org2-channel"
 
 echo $CHANNEL_NAME

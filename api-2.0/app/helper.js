@@ -12,6 +12,7 @@ const ccpPath = path.resolve(__dirname, '..', 'config', 'connection-org1.json');
 const ccpJSON = fs.readFileSync(ccpPath, 'utf8')
 const ccp = JSON.parse(ccpJSON);
 
+console.log(ccp.peers)
 
 const getRegisteredUser = async (username, userOrg, isJson) => {
 

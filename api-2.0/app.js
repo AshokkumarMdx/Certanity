@@ -8,6 +8,7 @@ const express = require('express')
 const app = express();
 const expressJWT = require('express-jwt');
 const jwt = require('jsonwebtoken');
+const jwt =require('express-jwt');
 const bearerToken = require('express-bearer-token');
 const cors = require('cors');
 const constants = require('./config/constants.json')
@@ -148,6 +149,8 @@ app.post('/channels/:channelName/chaincodes/:chaincodeName', async function (req
             errorData: null
         }
         res.send(response_payload);
+
+        
 
     } catch (error) {
         const response_payload = {

@@ -9,7 +9,7 @@ export ORDERER_CA=${PWD}/artifacts/channel/crypto-config/ordererOrganizations/ex
 
 export PRIVATE_DATA_CONFIG=${PWD}/artifacts/private-data/collections_config.json
 
-export CHANNEL_NAME=mychannel
+export CHANNEL_NAME=commonchannel
 
 setGlobalsForOrderer() {
     export CORE_PEER_LOCALMSPID="OrdererMSP"
@@ -78,7 +78,7 @@ presetup() {
 }
 # presetup
 
-CHANNEL_NAME="mychannel"
+CHANNEL_NAME="commonchannel"
 CC_RUNTIME_LANGUAGE="golang"
 VERSION="1"
 CC_SRC_PATH="./artifacts/src/github.com/fabcar/go"
@@ -273,7 +273,7 @@ chaincodeInvoke() {
         --peerAddresses localhost:7051 \
         --tlsRootCertFiles $PEER0_ORG1_CA \
         --peerAddresses localhost:9051 --tlsRootCertFiles $PEER0_ORG2_CA \
-        -c '{"function": "createCar","Args":["Car-2", "Audi", "R8", "Red", "Ashok"]}'
+        -c '{"function": "createCar","Args":["Car-2", "Audi", "R8", "Red", "krishna"]}'
 
 }
 
@@ -290,7 +290,7 @@ chaincodeInvoke() {
         --peerAddresses localhost:7051 \
         --tlsRootCertFiles $PEER0_ORG1_CA \
         --peerAddresses localhost:11051 --tlsRootCertFiles $PEER0_ORG3_CA \
-        -c '{"function": "createCar","Args":["Car-3", "Audi", "R8", "Blue", "Ashok"]}'
+        -c '{"function": "createCar","Args":["Car-3", "Audi", "R8", "Blue", "krishna"]}'
 
 }
 

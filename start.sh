@@ -19,6 +19,11 @@ echo "#######  org1-org3 channel creation  ##########"
 
 sleep 5
 
+
+
+
+
+
 echo "#######  org1-org3 deploying the CC  ##########"
 
 ./deployChaincode-org1-org3-channel.sh

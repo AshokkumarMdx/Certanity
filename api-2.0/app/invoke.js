@@ -39,15 +39,15 @@ const invokeTransaction = async (channelName, chaincodeName, fcn, args, username
                 strategy: DefaultEventHandlerStrategies.NETWORK_SCOPE_ALLFORTX
             },
         }
-
+        console.log('kkkkkkkkk3'kkkkkkkkk);
         // Create a new gateway for connecting to our peer node.
         const gateway = new Gateway();
         await gateway.connect(ccp, connectOptions);
-
+        console.log('4');
         // Get the network (channel) our contract is deployed to.
         const network = await gateway.getNetwork(channelName);
         const contract = network.getContract(chaincodeName);
-
+        console.log('5');
         let result
         let message;
         if (fcn === "createCar") {

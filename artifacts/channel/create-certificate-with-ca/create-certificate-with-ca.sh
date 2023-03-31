@@ -244,7 +244,7 @@ createCertificateForOrg2() {
 # createCertificateForOrg2
 
 
-###createcertificatesForOrg3###
+# createcertificatesForOrg3
 
 createcertificatesForOrg3() {
   echo
